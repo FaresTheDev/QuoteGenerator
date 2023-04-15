@@ -4,12 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="style.css">
-    <title>Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>QuoteGen</title>
 </head>
 <body>
+    <div class="quote-container" id="quote-container">
 
+        <!-- quote -->
+        <div class="quote-text">
+            <i class="fas fa-quote-left"></i> 
+            <span id="quote"></span>
+
+            <!-- Author -->
+            <div class="author">
+                <span id="author"></span>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="btn">
+            <button class="twitter-btn" id="twitter" title="Tweet quote">
+                <i class="fab fa-twitter"></i>
+            </button>
+
+            <button class="new-quote-btn" id='new-quote-btn' title="Genrate a new quote">New quote</button>
+        </div>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+    
+    <!-- script -->
+    <script src="quotes.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
